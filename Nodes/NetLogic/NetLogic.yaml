@@ -1,0 +1,9 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: RuntimeNetLogic1
+  Id: g=1d43a044f322d5da64ddfca7211b06df
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: Send
