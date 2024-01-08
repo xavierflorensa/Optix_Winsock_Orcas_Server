@@ -26,6 +26,7 @@ public class RuntimeNetLogic1 : BaseNetLogic
     {
         string text_to_send = "Hello World";
         winsock_Ear.Send(text_to_send);
+        
     }
 
     public override void Start()
@@ -38,6 +39,8 @@ public class RuntimeNetLogic1 : BaseNetLogic
         //Winsock_Ear.Connected += winsock_Ear_Connected;
         // Assign a callback to be executed when a message is received from the server
         winsock_Ear.ConnectionRequest += winsock_Ear_ConnectionRequest;
+         // Assign a callback to be executed when data is available from client
+        winsock_Ear.DataArrival += winsock_Ear_DataArrival;
         Log.Info("LocalIP: "+winsock_Ear.LocalIP[0]);
         Log.Info("protocol: "+winsock_Ear.Protocol.ToString());
         Log.Info("Legacy support: "+winsock_Ear.LegacySupport.ToString());
