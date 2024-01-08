@@ -22,10 +22,10 @@ public class RuntimeNetLogic1 : BaseNetLogic
     
     [ExportMethod]
     
-    public void Send()
+    public void Send(NodeId textboxNodeId)
     {
-        string text_to_send = "Hello World";
-        winsock_Ear.Send(text_to_send);
+         var text_to_send = InformationModel.Get<TextBox>(textboxNodeId);
+        winsock_Ear.Send(text_to_send.Text);
         
     }
 
