@@ -73,6 +73,8 @@ public class RuntimeNetLogic1 : BaseNetLogic
     private void winsock_Ear_DataArrival(object sender, Winsock_Orcas.WinsockDataArrivalEventArgs e)
         {
             string abRecibidos = winsock_Ear.Get<string>();
+            var missatge = Project.Current.GetVariable("Model/Message");
+            missatge.Value=abRecibidos;
             Log.Info(abRecibidos);
             
         }
