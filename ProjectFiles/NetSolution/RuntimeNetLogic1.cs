@@ -26,22 +26,27 @@ public class RuntimeNetLogic1 : BaseNetLogic
     {
          var text_to_send = InformationModel.Get<TextBox>(textboxNodeId);
         winsock_Ear.Send(text_to_send.Text);
-        
     }
-
+       
+   
     public override void Start()
     {
+      
+       
        winsock_Ear.LegacySupport=true;
        
-       winsock_Ear.Listen(2000);//This is to make the PC act as host
+        winsock_Ear.Listen(2000);//This is to make the PC act as host
                                  //winsock_Ear.Connect("10.2.10.201", 2000); //This is to make the PC act as client
-        // Assign a callback to be excuted when the client is connected
-        //Winsock_Ear.Connected += winsock_Ear_Connected;
         // Assign a callback to be executed when a message is received from the server
         winsock_Ear.ConnectionRequest += winsock_Ear_ConnectionRequest;
-         // Assign a callback to be executed when data is available from client
+        // Assign a callback to be excuted when the client is connected
+        //Winsock_Ear.Connected += winsock_Ear_Connected;
+        // Assign a callback to be executed when data is available from client
         winsock_Ear.DataArrival += winsock_Ear_DataArrival;
+        //display local IP
         Log.Info("LocalIP: "+winsock_Ear.LocalIP[0]);
+        var localIP = Project.Current.GetVariable("Model/LocalIP");
+        localIP.Value=winsock_Ear.LocalIP[0];
         Log.Info("protocol: "+winsock_Ear.Protocol.ToString());
         Log.Info("Legacy support: "+winsock_Ear.LegacySupport.ToString());
         Log.Info("LocalPort: "+winsock_Ear.LocalPort.ToString());
@@ -62,12 +67,16 @@ public class RuntimeNetLogic1 : BaseNetLogic
     private void winsock_Ear_Connected(object sender, Winsock_Orcas.WinsockConnectedEventArgs e)
     {
         Log.Info("Connected to slave!!");
-        
+      
     }
+    
     private void winsock_Ear_ConnectionRequest(object sender, Winsock_Orcas.WinsockConnectionRequestEventArgs e)
         {
             winsock_Ear.Close();
             winsock_Ear.Accept(e.Client);
+            //display remote IP
+            var remoteIP = Project.Current.GetVariable("Model/RemoteIP");
+            remoteIP.Value=winsock_Ear.RemoteHost.ToString();
         }
 
     private void winsock_Ear_DataArrival(object sender, Winsock_Orcas.WinsockDataArrivalEventArgs e)

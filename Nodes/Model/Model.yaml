@@ -5,3 +5,11 @@ Children:
   Type: BaseDataVariableType
   DataType: String
   Value: "0"
+- Name: RemoteIP
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: LocalIP
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
