@@ -225,7 +225,7 @@ Children:
     Type: BaseDataVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 280.0
+    Value: 360.0
   - Name: Caption
     Type: BaseDataVariableType
     DataType: String
@@ -252,7 +252,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 60.0
+      Value: 130.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -353,7 +353,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 2.0
+      Value: 72.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -376,7 +376,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 115.0
+      Value: 185.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -403,7 +403,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 116.0
+      Value: 186.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -446,7 +446,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 160.0
+      Value: 230.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -474,7 +474,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 166.0
+      Value: 236.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -487,7 +487,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Remote Host"}
+      Value: {"LocaleId":"en-US","Text":"Remote Client"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -497,7 +497,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 206.0
+      Value: 276.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -520,7 +520,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 240.0
+      Value: 310.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -558,7 +558,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 200.0
+      Value: 270.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -596,10 +596,64 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 240.0
+      Value: 310.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 30.0
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/Logo.JPG"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 260.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 140.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -30.0
+  - Name: Image2
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/Logo FT Optix.JPG"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 280.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
 - File: Screens/Screens.yaml
