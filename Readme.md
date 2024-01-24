@@ -1,17 +1,17 @@
 ﻿<a name="_toc155458070"></a><a name="_toc156766291"></a>Third party libraries (dll) Socket Server application with FactoryTalk Optix
 # Contents
-[1.	Introduction	1](#_toc157019700)
+[1.	Introduction](#_toc157019700)
 
-[2.	Installing third party DLL’s into FactoryTalk Optix.	1](#_toc157019701)
+[2.	Installing third party DLL’s into FactoryTalk Optix](#_toc157019701)
 
-[2.1.	Installing external references (dll libraries) into the project with Visual Studio code	9](#_toc157019702)
+[2.1.	Installing external references (dll libraries) into the project with Visual Studio Code](#_toc157019702)
 
-[1.	Building the Server	11](#_toc157019703)
-
-
+[1.	Building the Server](#_toc157019703)
 
 
-1. # <a name="_toc157019700"></a>Introduction
+
+
+# <a name="_toc157019700"></a>1 Introduction
 You can see the result here
 
 <https://youtu.be/6E4xt02Ohzw>
@@ -55,6 +55,8 @@ Click on the code
 ![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 003](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/8dd9fe97-8d63-474d-88f7-e49a48040f69)
 
 Visual Studio 2022 will open
+
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 003](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/8dd9fe97-8d63-474d-88f7-e49a48040f69)
 
 ![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 004](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/09409351-db93-458e-8207-db8020c25be4)
 
