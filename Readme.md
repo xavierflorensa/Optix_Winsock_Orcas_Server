@@ -6,7 +6,7 @@
 
 [2.1.	Installing external references (dll libraries) into the project with Visual Studio Code](#_toc157019702)
 
-[1.	Building the Server](#_toc157019703)
+[3.	Building the Server](#_toc157019703)
 
 
 
@@ -120,7 +120,7 @@ How you add a reference depends on the project type for the code you're working 
   ![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 015](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/7ee28544-5def-46d1-955f-4919330461e1)
 
 For more information, see [How to: Add or remove references](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2022).
-1. # <a name="_toc157019703"></a>Building the Server
+# <a name="_toc157019703"></a>3. Building the Server
 As soon as you use this library, you can see some data from class Winsock\_Orcas
 
 As you can see here, we have been able to see which one is the the Protocol used (TCP or UDP)
