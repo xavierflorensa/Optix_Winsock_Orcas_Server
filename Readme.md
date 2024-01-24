@@ -29,16 +29,14 @@ Even thought this library was created for Visual Basic, since it is compiled, it
 <https://www.codeproject.com/Articles/21443/Winsock-Revamped>
 
 Let’s start this application from zero
-1. # <a name="_toc157019701"></a>Installing third party DLL’s into FactoryTalk Optix.
+# <a name="_toc157019701"></a>1. Installing third party DLL’s into FactoryTalk Optix.
 The easiest way to install external references to a project is using Visual Studio 2002, since it will do all the work for you. Then if you prefer you can continue with Visual Studio Code since it is much faster to open and close.
 
 Start a new project in FT Optix Studio
 
 Add a new NetLogic code
 
-![A screenshot of a computer
-
-Description automatically generated]
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 001](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/e3283e46-6c67-41fe-849a-83a6cb07105c)
 
 Save the project
 
@@ -46,9 +44,7 @@ Insert this dll on the root directory of the project
 
 Winsock\_Orcas.dll
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.002.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 002](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/8b935f29-22b8-41b9-9e95-1f867ce8b1ed)
 
 Select editor to Visual Studio 2022
 
@@ -56,15 +52,11 @@ Close and open FT Optix to have this change updated.
 
 Click on the code
 
-![A screenshot of a computer
-
-Description automatically generated]
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 003](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/8dd9fe97-8d63-474d-88f7-e49a48040f69)
 
 Visual Studio 2022 will open
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.003.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 004](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/09409351-db93-458e-8207-db8020c25be4)
 
 ![A screenshot of a computer
 
@@ -72,47 +64,33 @@ Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57
 
 Go to Project / Add Project Reference
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.005.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 005](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/0d37f71a-5a76-4a0d-b0a5-83cbd8a2b741)
 
 Click on Browse
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.006.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 006](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/f2ca1c69-a188-4543-9823-534ae8abb325)
 
 Select the dll
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.007.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 007](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/2a1ccfcb-54f6-43a4-a0c1-987312e6c1e6)
 
 Verify that this is the right path
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.008.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 008](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/5ba81675-c77d-4b2f-aac4-3e18968bdb24)
 
 Click Ok
 
 Unfold assemblies
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.009.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 009](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/36080bcf-e6dc-4b3f-b23c-2806ba3300df)
 
 You have it installed
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.010.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 010](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/af2db39e-46d8-4d81-813b-69c4308164a6)
 
 Build the application (Do not build solution)
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.011.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 011](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/5bd6085a-24aa-420f-9b1b-a85f0a20688f)
 
 You can close Visual Studio 2022
 
@@ -122,18 +100,15 @@ Save close and open it again
 
 Open Netlogic
 
-![A screenshot of a computer program
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.012.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 012](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/69af0bbd-05c5-4920-ad70-ab50af9b8469)
 
 Open references file \*.csproj
 
 VS 2022 has done the dll installation for you without editing this \*.csproj file
 
-![A screenshot of a computer program
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 013](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/d80b8218-5c81-479b-8007-87d9ee02e384)
 
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.013.png)
-1. ## <a name="_toc156766294"></a><a name="_toc157019702"></a>Installing external references (dll libraries) into the project with Visual Studio code
+## <a name="_toc156766294"></a><a name="_toc157019702"></a>2 Installing external references (dll libraries) into the project with Visual Studio code
 Pending to test this way
 
 How you add a reference depends on the project type for the code you're working on:
@@ -141,10 +116,14 @@ How you add a reference depends on the project type for the code you're working 
 - If you see a **Dependencies** node in [**Solution Explorer**](https://learn.microsoft.com/en-us/visualstudio/ide/use-solution-explorer?view=vs-2022), you can use the right-click context menu to select **Add Project Reference**.
 
   ![Screenshot of the Add Project Reference option from the right-click context menu.](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.014.png)
+  
+  ![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 014](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/a2029104-b854-4a95-a009-93bca481d9a0)
 
 - If you see a **References** node in [**Solution Explorer**](https://learn.microsoft.com/en-us/visualstudio/ide/use-solution-explorer?view=vs-2022), you can use the right-click context menu to select **Add Reference**.
 
   ![Screenshot of the Add Reference option from the right-click context menu.](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.015.png)
+
+  ![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 015](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/7ee28544-5def-46d1-955f-4919330461e1)
 
 For more information, see [How to: Add or remove references](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=vs-2022).
 1. # <a name="_toc157019703"></a>Building the Server
@@ -152,9 +131,7 @@ As soon as you use this library, you can see some data from class Winsock\_Orcas
 
 As you can see here, we have been able to see which one is the the Protocol used (TCP or UDP)
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.016.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 016](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/cf8c7eef-ae74-40b5-bc74-210289ac6c4e)
 
 
 This is done with this code
@@ -342,25 +319,17 @@ public class RuntimeNetLogic1 : BaseNetLogic
 
 If we change status of legacy support we see
 
-![A screen shot of a computer code
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 017](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/23942f3a-76a9-404d-bf51-af3409ef1b9b)
 
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.017.png)
-
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.018.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 018](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/86c33545-1f91-40eb-beb2-1502f074a788)
 
 We must check if the server is listening on port 2000.
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.019.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 019](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/cb4975bd-e5cb-4265-ade8-c404175a5bf0)
 
 We can even retrieve the IP from server host and from remote client
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.020.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 020](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/6408a2f1-7678-4251-a3f9-d4ad18bf9f4d)
 
 [ExportMethod]
 
@@ -580,9 +549,7 @@ You can download the code from here
 
 Let’s deal with events,
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.021.png)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 021](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/939472af-94de-49d1-804f-1141966539e9)
 
 Now we can send whatever messages we want from server
 
