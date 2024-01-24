@@ -52,17 +52,13 @@ Close and open FT Optix to have this change updated.
 
 Click on the code
 
-![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 003](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/8dd9fe97-8d63-474d-88f7-e49a48040f69)
+![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 001](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/e3283e46-6c67-41fe-849a-83a6cb07105c)
 
 Visual Studio 2022 will open
 
 ![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 003](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/8dd9fe97-8d63-474d-88f7-e49a48040f69)
 
 ![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 004](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/09409351-db93-458e-8207-db8020c25be4)
-
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.004.png)
 
 Go to Project / Add Project Reference
 
