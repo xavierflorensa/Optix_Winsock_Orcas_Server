@@ -113,13 +113,9 @@ How you add a reference depends on the project type for the code you're working 
 
 - If you see a **Dependencies** node in [**Solution Explorer**](https://learn.microsoft.com/en-us/visualstudio/ide/use-solution-explorer?view=vs-2022), you can use the right-click context menu to select **Add Project Reference**.
 
-  ![Screenshot of the Add Project Reference option from the right-click context menu.](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.014.png)
-  
   ![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 014](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/a2029104-b854-4a95-a009-93bca481d9a0)
 
 - If you see a **References** node in [**Solution Explorer**](https://learn.microsoft.com/en-us/visualstudio/ide/use-solution-explorer?view=vs-2022), you can use the right-click context menu to select **Add Reference**.
-
-  ![Screenshot of the Add Reference option from the right-click context menu.](Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.015.png)
 
   ![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 015](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/7ee28544-5def-46d1-955f-4919330461e1)
 
