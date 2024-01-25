@@ -133,6 +133,26 @@ At least we can have a dialog with the class to read, write data, when we hit th
 
 Socket\_winsock
 
+```C#
+[ExportMethod]
+
+
+    public void Send()
+    {
+         Log.Info("Hello World");
+         winsock_Ear.Listen(2000);//This is to make the PC act as host
+                                 //winsock_Ear.Connect("10.2.10.201", 2000); //This is to make the PC act as client
+        
+        Log.Info(winsock_Ear.LocalIP.ToString());
+        Log.Info("protocol"+winsock_Ear.Protocol.ToString());
+        Log.Info("Legacy support"+winsock_Ear.LegacySupport.ToString());
+        Log.Info("Hello World");
+        string text_to_send = "Hello World";
+        winsock_Ear.Send(text_to_send);
+        
+    }
+```
+
 [ExportMethod]
 
 
