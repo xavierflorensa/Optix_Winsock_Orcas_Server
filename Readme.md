@@ -448,7 +448,6 @@ public class RuntimeNetLogic1 : BaseNetLogic
     public override void Stop()
     {
          Log.Info("Stopping");
-        
     }
     
     private void winsock_Ear_Connected(object sender, Winsock_Orcas.WinsockConnectedEventArgs e)
@@ -466,16 +465,12 @@ public class RuntimeNetLogic1 : BaseNetLogic
         {
             string abRecibidos = winsock_Ear.Get<string>();
             Log.Info(abRecibidos);
-            
         }
     private Winsock Winsock_Ear;
-    //private Winsock_Orcas.Winsock winsock_Ear;
-    //public Winsock_Orcas.Winsock winsock_Ear;
 }
 
 ```
 Let’s try the client application with those callbacks
 
-[A screenshot of a computer
-
-Description automatically generated]: Aspose.Words.ba282580-5f3d-413f-93f5-cedb57be876b.001.png
+You will find this on other repository
+<https://github.com/xavierflorensa/Optix_Winsock_Orcas_Client.git>
