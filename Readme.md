@@ -36,7 +36,7 @@ Start a new project in FT Optix Studio
 
 Add a new NetLogic code
 
-![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 001](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/e3283e46-6c67-41fe-849a-83a6cb07105c)
+![Picture1](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/04889cfb-db99-4f1e-a3d6-3911b3262e80)
 
 Save the project
 
@@ -44,7 +44,7 @@ Insert this dll on the root directory of the project
 
 Winsock\_Orcas.dll
 
-![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 002](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/8b935f29-22b8-41b9-9e95-1f867ce8b1ed)
+![Picture2](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/5ab6daad-06b0-4fbe-9461-49d5750f6b62)
 
 Select editor to Visual Studio 2022
 
@@ -52,39 +52,38 @@ Close and open FT Optix to have this change updated.
 
 Click on the code
 
-![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 001](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/e3283e46-6c67-41fe-849a-83a6cb07105c)
+![Picture3](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/73655b1c-7b5e-4311-a0b4-41b17fd44da8)
 
 Visual Studio 2022 will open
 
-![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 003](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/8dd9fe97-8d63-474d-88f7-e49a48040f69)
+![Picture4](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/3178a529-b0a8-4112-b929-d8c070045d29)
 
-![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 004](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/09409351-db93-458e-8207-db8020c25be4)
+![Picture5](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/3ed5bcae-84f2-469e-b4ac-10c784df3e74)
 
 Go to Project / Add Project Reference
 
-![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 005](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/0d37f71a-5a76-4a0d-b0a5-83cbd8a2b741)
+![Picture6](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/11c4437a-2795-41c0-9965-eb9c253daddf)
 
 Click on Browse
 
-![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 006](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/f2ca1c69-a188-4543-9823-534ae8abb325)
+![Picture7](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/6997d637-2978-40cf-93a9-c8e57d87dfe8)
 
 Select the dll
 
-![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 007](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/2a1ccfcb-54f6-43a4-a0c1-987312e6c1e6)
+![Picture8](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/400df88e-a36f-44c4-8338-c692d97059b2)
 
 Verify that this is the right path
 
-![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 008](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/5ba81675-c77d-4b2f-aac4-3e18968bdb24)
-
+![Picture9](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/1a00bdc6-d49f-42e7-adbf-1acfe351dc10)
 Click Ok
 
 Unfold assemblies
 
-![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 009](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/36080bcf-e6dc-4b3f-b23c-2806ba3300df)
+![Picture10](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/ac6c027a-ab86-4733-babf-db708c88b7df)
 
 You have it installed
 
-![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 010](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/af2db39e-46d8-4d81-813b-69c4308164a6)
+![Picture11](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/4937b7c3-f20c-4bb6-8b5a-e9d3ae54ba97)
 
 Build the application (Do not build solution)
 
