@@ -239,47 +239,30 @@ We can even retrieve the IP from server host and from remote client
 
 ![Aspose Words ba282580-5f3d-413f-93f5-cedb57be876b 020](https://github.com/xavierflorensa/Optix_Winsock_Orcas_Server/assets/55208134/6408a2f1-7678-4251-a3f9-d4ad18bf9f4d)
 
+```C#
 [ExportMethod]
+    
+    public void Send()
+    {
+         Log.Info("Hello World");
+         winsock_Ear.Listen(2000);//This is to make the PC act as server host
+                                 //winsock_Ear.Connect("10.2.10.201", 2000); //This is to make the PC act as client
+        
+        winsock_Ear.LegacySupport=true;
+        Log.Info("LocalIP: "+winsock_Ear.LocalIP[0]);
+        Log.Info("protocol: "+winsock_Ear.Protocol.ToString());
+        Log.Info("Legacy support: "+winsock_Ear.LegacySupport.ToString());
+        Log.Info("LocalPort: "+winsock_Ear.LocalPort.ToString());
+        Log.Info("Remote Host: "+winsock_Ear.RemoteHost.ToString());
+        Log.Info("Remote Port: "+winsock_Ear.RemotePort.ToString());
+        Log.Info("State: "+winsock_Ear.State.ToString());
+        Log.Info("Hello World");
+        string text_to_send = "Hello World";
+        winsock_Ear.Send(text_to_send);
+        
+    }
+```
 
-
-
-`    `public void Send()
-
-`    `{
-
-`         `Log.Info("Hello World");
-
-`         `winsock\_Ear.Listen(2000);//This is to make the PC act as server host
-
-`                                 `//winsock\_Ear.Connect("10.2.10.201", 2000); //This is to make the PC act as client
-
-
-
-`        `winsock\_Ear.LegacySupport=true;
-
-`        `Log.Info("LocalIP: "+winsock\_Ear.LocalIP[0]);
-
-`        `Log.Info("protocol: "+winsock\_Ear.Protocol.ToString());
-
-`        `Log.Info("Legacy support: "+winsock\_Ear.LegacySupport.ToString());
-
-`        `Log.Info("LocalPort: "+winsock\_Ear.LocalPort.ToString());
-
-`        `Log.Info("Remote Host: "+winsock\_Ear.RemoteHost.ToString());
-
-`        `Log.Info("Remote Port: "+winsock\_Ear.RemotePort.ToString());
-
-`        `Log.Info("State: "+winsock\_Ear.State.ToString());
-
-`        `Log.Info("Hello World");
-
-`        `string text\_to\_send = "Hello World";
-
-`        `winsock\_Ear.Send(text\_to\_send);
-
-
-
-`    `}
 
 
 Let’s improve the code
@@ -288,164 +271,93 @@ Let’s try to put the code on the start program
 
 This works accepting connections but not more else
 
+```C#
 public class RuntimeNetLogic1 : BaseNetLogic
-
 {
-
-
-
-`    `//Winsock winsock\_Ear = new Winsock();
-
-
-
-`    `private void winsock\_Ear\_Connected(object sender, Winsock\_Orcas.WinsockConnectedEventArgs e)
-
-`    `{
-
-`        `Log.Info("Connected to slave!!");
-
-
-
-`    `}
-
-`    `[ExportMethod]
-
-
-
-`    `public void Send()
-
-`    `{
-
-`        `/\*
-
-`         `Log.Info("Hello World");
-
-`         `winsock\_Ear.Listen(2000);//This is to make the PC act as server host
-
-`                                 `//winsock\_Ear.Connect("10.2.10.201", 2000); //This is to make the PC act as client
-
-
-
-`        `winsock\_Ear.LegacySupport=true;
-
-`        `Log.Info("LocalIP: "+winsock\_Ear.LocalIP[0]);
-
-`        `Log.Info("protocol: "+winsock\_Ear.Protocol.ToString());
-
-`        `Log.Info("Legacy support: "+winsock\_Ear.LegacySupport.ToString());
-
-`        `Log.Info("LocalPort: "+winsock\_Ear.LocalPort.ToString());
-
-`        `Log.Info("Remote Host: "+winsock\_Ear.RemoteHost.ToString());
-
-`        `Log.Info("Remote Port: "+winsock\_Ear.RemotePort.ToString());
-
-`        `Log.Info("State: "+winsock\_Ear.State.ToString());
-
-`        `Log.Info("Hello World");
-
-`        `while (true)
-
-`        `{
-
-`        `string text\_to\_send = "Hello World";
-
-`        `winsock\_Ear.Send(text\_to\_send);
-
-`        `System.Threading.Thread.Sleep(1000);
-
-`        `}
-
-`        `\*/
-
-`    `}
-
-
-
-
-
-`    `public override void Start()
-
-`    `//public override void Start(object sender, EventArgs e)
-
-`    `{
-
-`       `Winsock winsock\_Ear = new Winsock();
-
-`       `winsock\_Ear.LegacySupport=true;
-
-
-
-`       `winsock\_Ear.Listen(2000);//This is to make the PC act as host
-
-`                                 `//winsock\_Ear.Connect("10.2.10.201", 2000); //This is to make the PC act as client
-
-
-
-`        `Log.Info("LocalIP: "+winsock\_Ear.LocalIP[0]);
-
-`        `Log.Info("protocol: "+winsock\_Ear.Protocol.ToString());
-
-`        `Log.Info("Legacy support: "+winsock\_Ear.LegacySupport.ToString());
-
-`        `Log.Info("LocalPort: "+winsock\_Ear.LocalPort.ToString());
-
-`        `Log.Info("Remote Host: "+winsock\_Ear.RemoteHost.ToString());
-
-`        `Log.Info("Remote Port: "+winsock\_Ear.RemotePort.ToString());
-
-`        `Log.Info("State: "+winsock\_Ear.State.ToString());
-
-`        `Log.Info("Hello World");
-
-`        `/\*
-
-`        `while (true)
-
-`        `{
-
-`        `string text\_to\_send = "Hello World";
-
-`        `winsock\_Ear.Send(text\_to\_send);
-
-`        `System.Threading.Thread.Sleep(1000);
-
-`        `} 
-
-`        `\*/
-
-`    `}
-
-`    `public override void Stop()
-
-`    `//public override void Stop()
-
-`    `{
-
-`         `Log.Info("Stopping");
-
-`        `// Insert code to be executed when the user-defined logic is stopped
-
-`    `}
-
-`    `private void winsock\_Ear\_ConnectionRequest(object sender, WinsockConnectionRequestEventArgs e)
-
-`    `{
-
-`        `//winsock\_Ear.Close();
-
-`        `//winsock\_Ear.Accept(e.Client);
-
-`        `Log.Info("Connected to slave!!");
-
-`    `}
-
-`    `//private Winsock\_Orcas.Winsock winsock\_Ear;
-
-`    `//public Winsock\_Orcas.Winsock winsock\_Ear;
-
+    
+    //Winsock winsock_Ear = new Winsock();
+    
+
+    private void winsock_Ear_Connected(object sender, Winsock_Orcas.WinsockConnectedEventArgs e)
+    {
+        Log.Info("Connected to slave!!");
+        
+    }
+
+    [ExportMethod]
+    
+    public void Send()
+    {
+        /*
+         Log.Info("Hello World");
+         winsock_Ear.Listen(2000);//This is to make the PC act as server host
+                                 //winsock_Ear.Connect("10.2.10.201", 2000); //This is to make the PC act as client
+        
+        winsock_Ear.LegacySupport=true;
+        Log.Info("LocalIP: "+winsock_Ear.LocalIP[0]);
+        Log.Info("protocol: "+winsock_Ear.Protocol.ToString());
+        Log.Info("Legacy support: "+winsock_Ear.LegacySupport.ToString());
+        Log.Info("LocalPort: "+winsock_Ear.LocalPort.ToString());
+        Log.Info("Remote Host: "+winsock_Ear.RemoteHost.ToString());
+        Log.Info("Remote Port: "+winsock_Ear.RemotePort.ToString());
+        Log.Info("State: "+winsock_Ear.State.ToString());
+        Log.Info("Hello World");
+        while (true)
+        {
+        string text_to_send = "Hello World";
+        winsock_Ear.Send(text_to_send);
+        System.Threading.Thread.Sleep(1000);
+        }
+        */
+    }
+
+
+
+    public override void Start()
+    //public override void Start(object sender, EventArgs e)
+    {
+       Winsock winsock_Ear = new Winsock();
+       winsock_Ear.LegacySupport=true;
+       
+       winsock_Ear.Listen(2000);//This is to make the PC act as host
+                                 //winsock_Ear.Connect("10.2.10.201", 2000); //This is to make the PC act as client
+        
+        Log.Info("LocalIP: "+winsock_Ear.LocalIP[0]);
+        Log.Info("protocol: "+winsock_Ear.Protocol.ToString());
+        Log.Info("Legacy support: "+winsock_Ear.LegacySupport.ToString());
+        Log.Info("LocalPort: "+winsock_Ear.LocalPort.ToString());
+        Log.Info("Remote Host: "+winsock_Ear.RemoteHost.ToString());
+        Log.Info("Remote Port: "+winsock_Ear.RemotePort.ToString());
+        Log.Info("State: "+winsock_Ear.State.ToString());
+        Log.Info("Hello World");
+        /*
+        while (true)
+        {
+        string text_to_send = "Hello World";
+        winsock_Ear.Send(text_to_send);
+        System.Threading.Thread.Sleep(1000);
+        } 
+        */
+    }
+
+    public override void Stop()
+    //public override void Stop()
+    {
+         Log.Info("Stopping");
+        // Insert code to be executed when the user-defined logic is stopped
+    }
+    private void winsock_Ear_ConnectionRequest(object sender, WinsockConnectionRequestEventArgs e)
+    {
+        //winsock_Ear.Close();
+        //winsock_Ear.Accept(e.Client);
+        Log.Info("Connected to slave!!");
+
+    }
+
+    //private Winsock_Orcas.Winsock winsock_Ear;
+    //public Winsock_Orcas.Winsock winsock_Ear;
 }
-
+```
 
 EventArgs e is a parameter called e that contains the event data, see the EventArgs MSDN page for more information.
 
@@ -465,179 +377,103 @@ You have to change the application and add this sentence
 
 To assign a callback that be executed after first connectionrequest
 
-` `public override void Start()
-
-`    `{
-
-`       `winsock\_Ear.LegacySupport=true;
-
-
-
-`       `winsock\_Ear.Listen(2000);//This is to make the PC act as host
-
-`                                 `//winsock\_Ear.Connect("10.2.10.201", 2000); //This is to make the PC act as client
-
-`        `// Assign a callback to be excuted when the client is connected
-
-`        `//Winsock\_Ear.Connected += winsock\_Ear\_Connected;
-
-`        `// Assign a callback to be executed when a message is received from the server
-
-`        `winsock\_Ear.ConnectionRequest += winsock\_Ear\_ConnectionRequest;
+```C#
+public override void Start()
+    {
+       winsock_Ear.LegacySupport=true;
+       
+       winsock_Ear.Listen(2000);//This is to make the PC act as host
+                                 //winsock_Ear.Connect("10.2.10.201", 2000); //This is to make the PC act as client
+        // Assign a callback to be excuted when the client is connected
+        //Winsock_Ear.Connected += winsock_Ear_Connected;
+        // Assign a callback to be executed when a message is received from the server
+        winsock_Ear.ConnectionRequest += winsock_Ear_ConnectionRequest;
+```
 
 This is the complete code
 
+```C#
 #region Using directives
-
 using System;
-
 using UAManagedCore;
-
 using OpcUa = UAManagedCore.OpcUa;
-
 using FTOptix.HMIProject;
-
 using FTOptix.Retentivity;
-
 using FTOptix.UI;
-
 using FTOptix.NativeUI;
-
 using FTOptix.CoreBase;
-
 using FTOptix.Core;
-
 using FTOptix.NetLogic;
-
-using Winsock\_Orcas;
-
+using Winsock_Orcas;
 using System.Reflection.Emit;
-
 using System.Net.Sockets;
-
 using System.Net.Security;
-
 using System.Net.Http;
-
 #endregion
 
 public class RuntimeNetLogic1 : BaseNetLogic
-
 {
+    Winsock winsock_Ear = new Winsock(); //opens a new socket
+    
+    [ExportMethod]
+    
+    public void Send()
+    {
+        string text_to_send = "Hello World";
+        winsock_Ear.Send(text_to_send);
+    }
 
-`    `Winsock winsock\_Ear = new Winsock(); //opens a new socket
+    public override void Start()
+    {
+       winsock_Ear.LegacySupport=true;
+       
+       winsock_Ear.Listen(2000);//This is to make the PC act as host
+                                 //winsock_Ear.Connect("10.2.10.201", 2000); //This is to make the PC act as client
+        // Assign a callback to be excuted when the client is connected
+        //Winsock_Ear.Connected += winsock_Ear_Connected;
+        // Assign a callback to be executed when a message is received from the server
+        winsock_Ear.ConnectionRequest += winsock_Ear_ConnectionRequest;
+        Log.Info("LocalIP: "+winsock_Ear.LocalIP[0]);
+        Log.Info("protocol: "+winsock_Ear.Protocol.ToString());
+        Log.Info("Legacy support: "+winsock_Ear.LegacySupport.ToString());
+        Log.Info("LocalPort: "+winsock_Ear.LocalPort.ToString());
+        Log.Info("Remote Host: "+winsock_Ear.RemoteHost.ToString());
+        Log.Info("Remote Port: "+winsock_Ear.RemotePort.ToString());
+        Log.Info("State: "+winsock_Ear.State.ToString());
+        Log.Info("Hello World");
+        string text_to_send = "Hello World";
+        winsock_Ear.Send(text_to_send);
+    }
 
+    public override void Stop()
+    {
+         Log.Info("Stopping");
+        
+    }
+    
+    private void winsock_Ear_Connected(object sender, Winsock_Orcas.WinsockConnectedEventArgs e)
+    {
+        Log.Info("Connected to slave!!");
+        
+    }
+    private void winsock_Ear_ConnectionRequest(object sender, Winsock_Orcas.WinsockConnectionRequestEventArgs e)
+        {
+            winsock_Ear.Close();
+            winsock_Ear.Accept(e.Client);
+        }
 
-
-`    `[ExportMethod]
-
-
-
-`    `public void Send()
-
-`    `{
-
-`        `string text\_to\_send = "Hello World";
-
-`        `winsock\_Ear.Send(text\_to\_send);
-
-`    `}
-
-`    `public override void Start()
-
-`    `{
-
-`       `winsock\_Ear.LegacySupport=true;
-
-
-
-`       `winsock\_Ear.Listen(2000);//This is to make the PC act as host
-
-`                                 `//winsock\_Ear.Connect("10.2.10.201", 2000); //This is to make the PC act as client
-
-`        `// Assign a callback to be excuted when the client is connected
-
-`        `//Winsock\_Ear.Connected += winsock\_Ear\_Connected;
-
-`        `// Assign a callback to be executed when a message is received from the server
-
-`        `winsock\_Ear.ConnectionRequest += winsock\_Ear\_ConnectionRequest;
-
-`        `Log.Info("LocalIP: "+winsock\_Ear.LocalIP[0]);
-
-`        `Log.Info("protocol: "+winsock\_Ear.Protocol.ToString());
-
-`        `Log.Info("Legacy support: "+winsock\_Ear.LegacySupport.ToString());
-
-`        `Log.Info("LocalPort: "+winsock\_Ear.LocalPort.ToString());
-
-`        `Log.Info("Remote Host: "+winsock\_Ear.RemoteHost.ToString());
-
-`        `Log.Info("Remote Port: "+winsock\_Ear.RemotePort.ToString());
-
-`        `Log.Info("State: "+winsock\_Ear.State.ToString());
-
-`        `Log.Info("Hello World");
-
-`        `string text\_to\_send = "Hello World";
-
-`        `winsock\_Ear.Send(text\_to\_send);
-
-`    `}
-
-`    `public override void Stop()
-
-`    `{
-
-`         `Log.Info("Stopping");
-
-
-
-`    `}
-
-
-
-`    `private void winsock\_Ear\_Connected(object sender, Winsock\_Orcas.WinsockConnectedEventArgs e)
-
-`    `{
-
-`        `Log.Info("Connected to slave!!");
-
-
-
-`    `}
-
-`    `private void winsock\_Ear\_ConnectionRequest(object sender, Winsock\_Orcas.WinsockConnectionRequestEventArgs e)
-
-`        `{
-
-`            `winsock\_Ear.Close();
-
-`            `winsock\_Ear.Accept(e.Client);
-
-`        `}
-
-`    `private void winsock\_Ear\_DataArrival(object sender, Winsock\_Orcas.WinsockDataArrivalEventArgs e)
-
-`        `{
-
-`            `string abRecibidos = winsock\_Ear.Get<string>();
-
-`            `Log.Info(abRecibidos);
-
-
-
-`        `}
-
-`    `private Winsock Winsock\_Ear;
-
-`    `//private Winsock\_Orcas.Winsock winsock\_Ear;
-
-`    `//public Winsock\_Orcas.Winsock winsock\_Ear;
-
+    private void winsock_Ear_DataArrival(object sender, Winsock_Orcas.WinsockDataArrivalEventArgs e)
+        {
+            string abRecibidos = winsock_Ear.Get<string>();
+            Log.Info(abRecibidos);
+            
+        }
+    private Winsock Winsock_Ear;
+    //private Winsock_Orcas.Winsock winsock_Ear;
+    //public Winsock_Orcas.Winsock winsock_Ear;
 }
 
-
+```
 Let’s try the client application with those callbacks
 
 [A screenshot of a computer
